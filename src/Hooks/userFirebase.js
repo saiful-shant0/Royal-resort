@@ -8,14 +8,11 @@ initializedAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState();
     const auth = getAuth()
-
+    const googleProvider = new GoogleAuthProvider();
     const signInUsingGoogle = () => {
-        const googleProvider = new GoogleAuthProvider();
 
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            })
+
+        return signInWithPopup(auth, googleProvider)
 
     }
     const logOut = () => {

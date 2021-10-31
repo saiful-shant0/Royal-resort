@@ -10,6 +10,7 @@ import MyBooking from './Pages/Mybookings/MyBooking';
 import LogIn from './Pages/LogIn/LogIn';
 import NotFound from './Pages/NotFound.js/NotFound';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -31,9 +32,9 @@ function App() {
             <Route path="/addservice" >
               <AddServices></AddServices>
             </Route>
-            <Route path="/mybooking" >
+            <PrivateRoute path="/mybooking" >
               <MyBooking></MyBooking>
-            </Route>
+            </PrivateRoute>
             <Route path="/login" >
               <LogIn></LogIn>
             </Route>
