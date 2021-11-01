@@ -13,7 +13,7 @@ const Service = (props) => {
             <p className="px-3">{description}</p>
 
 
-            <Link to={`/mybooking/:${_id}`}>    <button className="btn btn-success">VISIT {name}</button></Link>
+            <Link to={`/mybooking/:${_id}`}>    <button className="btn btn-success">Book {name}</button></Link>
         </div>
     );
 };
