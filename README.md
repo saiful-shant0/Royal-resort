@@ -16,4 +16,4 @@ mongodb, heroku ,node, route e.t.c
 
 # Live Link: 
 Server: https://enigmatic-tor-88681.herokuapp.com/services
- Client: 
+ Client: https://royals-resort.web.app/home
