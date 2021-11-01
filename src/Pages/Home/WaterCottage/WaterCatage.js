@@ -3,12 +3,12 @@ import React from 'react';
 const WaterCatage = () => {
     return (
         <div className="container pb-5 mt-3 " >
-            <h2 className="mb-3">About Us</h2>
+            <h2 className="mb-3">Water Cottage</h2>
             <div className="row g-2">
 
-                <div className="col-md-6 mt-4" >ABOUT US
+                <div className="col-md-6 mt-4" >
                     <h2 >
-                        <span>Motion Heath Care</span>
+                        <span>Royals Special</span>
 
                     </h2>
                     <p>

@@ -10,7 +10,7 @@ const Villas = () => {
                 </div>
                 <div className="col-md-6 mt-4 " >Villa's
                     <h2 >
-                        <span>Motion Heath Care</span>
+                        <span>Royals</span>
 
                     </h2>
                     <p>
