@@ -6,16 +6,18 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Home from './Pages/Home/Home';
 import ManageBookings from './Pages/ManageBookings/ManageBookings';
 import AddServices from './Pages/AddServices/AddServices';
-import MyBooking from './Pages/Mybookings/MyBooking';
+
 import LogIn from './Pages/LogIn/LogIn';
 import NotFound from './Pages/NotFound.js/NotFound';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import OrderReview from './Pages/OrderReview/OrderReview';
+import Booking from './Pages/Booking/Booking';
 
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
@@ -33,7 +35,10 @@ function App() {
               <AddServices></AddServices>
             </PrivateRoute>
             <PrivateRoute path="/mybooking" >
-              <MyBooking></MyBooking>
+              <OrderReview></OrderReview>
+            </PrivateRoute>
+            <PrivateRoute path="/addbooking" >
+              <Booking></Booking>
             </PrivateRoute>
             <Route path="/login" >
               <LogIn></LogIn>

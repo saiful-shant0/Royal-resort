@@ -10,7 +10,7 @@ const AddServices = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://enigmatic-tor-88681.herokuapp.com/services', data)
+        axios.post('http://localhost:4000/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

@@ -8,6 +8,7 @@ import './Header.css'
 
 const Header = () => {
     const { user, logOut } = useAuth();
+
     return (
 
         <>
