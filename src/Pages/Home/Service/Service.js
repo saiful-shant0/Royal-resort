@@ -12,11 +12,10 @@ const Service = (props) => {
 
             <p className="px-3">{description}</p>
 
+            <Link to={`/booking/${_id}`}>
+                <button className="btn btn-primary"> Booking Now</button>
+            </Link>
 
-            <button
-                onClick={() => props.handleAddToCart(props.service)}
-                className="btn-regular"
-            > add to cart</button>
         </div>
     );
 };

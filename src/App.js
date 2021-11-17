@@ -11,8 +11,9 @@ import LogIn from './Pages/LogIn/LogIn';
 import NotFound from './Pages/NotFound.js/NotFound';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
-import OrderReview from './Pages/OrderReview/OrderReview';
-import Booking from './Pages/Booking/Booking';
+import Booking from './Pages/Bokking/Booking';
+import MyBooking from './Pages/Mybooking/MyBooking';
+
 
 
 function App() {
@@ -34,12 +35,13 @@ function App() {
             <PrivateRoute path="/addservice" >
               <AddServices></AddServices>
             </PrivateRoute>
-            <PrivateRoute path="/mybooking" >
-              <OrderReview></OrderReview>
-            </PrivateRoute>
-            <PrivateRoute path="/addbooking" >
+            <PrivateRoute path="/booking/:serviceId" >
               <Booking></Booking>
             </PrivateRoute>
+            <PrivateRoute path="/mybooking" >
+              <MyBooking></MyBooking>
+            </PrivateRoute>
+
             <Route path="/login" >
               <LogIn></LogIn>
             </Route>
